@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-08-30 14:50:34
  * @LastEditors: along
- * @LastEditTime: 2023-08-30 15:14:26
+ * @LastEditTime: 2023-08-30 18:30:55
  * @FilePath: /cxy-v3-template/.eslintrc.cjs
  */
 /* eslint-env node */
@@ -22,5 +22,6 @@ module.exports = {
 	},
 	rules: {
 		'vue/multi-word-component-names': 'off',
+		'no-unsafe-optional-chaining': 'off',
 	},
 };
