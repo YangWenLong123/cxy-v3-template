@@ -7,14 +7,13 @@
  * @FilePath: /vue3/src/App.vue
 -->
 <script setup lang="ts">
-  import { RouterView } from 'vue-router'
+import {RouterView} from 'vue-router';
 </script>
 
 <template>
-  <keep-alive>
-    <RouterView />
-  </keep-alive>
+	<keep-alive>
+		<RouterView />
+	</keep-alive>
 </template>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

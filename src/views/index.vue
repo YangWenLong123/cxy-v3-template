@@ -3,8 +3,8 @@
  * @Description: 页面入口
  * @Date: 2023-08-30 13:30:26
  * @LastEditors: along
- * @LastEditTime: 2023-08-30 14:37:42
- * @FilePath: /vue3/src/views/index.vue
+ * @LastEditTime: 2023-08-30 15:17:32
+ * @FilePath: /cxy-v3-template/src/views/index.vue
 -->
 <template>
 	<div>
@@ -13,10 +13,10 @@
 </template>
 
 <script lang="ts" setup>
-const a = ref(0);
-const state = reactive({
-	b: 2,
+defineOptions({
+	name: 'index',
 });
+const a = ref(0);
 </script>
 
 <style lang="scss" scoped></style>
