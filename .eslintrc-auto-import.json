@@ -76,6 +76,8 @@
     "toValue": true,
     "useLink": true,
     "watchPostEffect": true,
-    "watchSyncEffect": true
+    "watchSyncEffect": true,
+    "ElMessage": true,
+    "ElLoading": true
   }
 }

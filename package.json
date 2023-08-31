@@ -19,8 +19,8 @@
 		"commitlint": "commitlint --config commitlint.config.cjs -e -V"
 	},
 	"dependencies": {
-		"ant-design-vue": "3.2.20",
 		"axios": "^1.5.0",
+		"element-plus": "^2.3.12",
 		"pinia": "^2.1.6",
 		"vue": "^3.3.4",
 		"vue-router": "^4.2.4"

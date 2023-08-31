@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-08-30 14:50:34
  * @LastEditors: along
- * @LastEditTime: 2023-08-30 17:14:32
+ * @LastEditTime: 2023-08-31 09:17:35
  * @FilePath: /cxy-v3-template/env.d.ts
  */
 /// <reference types="vite/client" />
@@ -20,4 +20,9 @@ declare const __APP_ENV__: string;
 declare module '*.vue' {
 	import Vue from 'vue';
 	export default Vue;
+}
+
+declare global {
+	const ElMessage: typeof import('element-plus')['ElMessage'];
+	const ElLoading: typeof import('element-plus')['ElLoading'];
 }

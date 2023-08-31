@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-08-30 13:22:11
  * @LastEditors: along
- * @LastEditTime: 2023-08-30 17:06:02
+ * @LastEditTime: 2023-08-31 09:02:28
  * @FilePath: /cxy-v3-template/vite.config.ts
  */
 import path from 'node:path';
@@ -12,6 +12,8 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import AutoImport from 'unplugin-auto-import/vite';
 import commpressPlugin from 'vite-plugin-compression';
+import Components from 'unplugin-vue-components/vite';
+import {ElementPlusResolver} from 'unplugin-vue-components/resolvers';
 
 // https://vitejs.dev/config/
 export default defineConfig(({mode}) => {
@@ -35,6 +37,11 @@ export default defineConfig(({mode}) => {
 					filepath: './.eslintrc-auto-import.json',
 					globalsPropValue: true,
 				},
+				// 自动导入element
+				resolvers: [ElementPlusResolver()],
+			}),
+			Components({
+				resolvers: [ElementPlusResolver()],
 			}),
 			commpressPlugin({
 				verbose: true, // 默认即可

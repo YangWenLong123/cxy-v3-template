@@ -3,11 +3,10 @@
  * @Description:
  * @Date: 2023-08-30 17:51:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-30 18:21:40
+ * @LastEditTime: 2023-08-31 09:03:54
  * @FilePath: /cxy-v3-template/src/service/axios.ts
  */
 import axios, {AxiosResponse, AxiosRequestConfig} from 'axios';
-import {message} from 'ant-design-vue';
 import Qs from 'qs';
 
 const service = axios.create({
@@ -32,7 +31,7 @@ service.interceptors.response.use(
 		const {status, data} = response;
 		if (status === 200) return data;
 		if (status === 401) {
-			message.error('Token获取失败');
+			// message.error('Token获取失败');
 			return Promise.reject(data);
 		}
 		return Promise.reject(data);
@@ -43,7 +42,7 @@ service.interceptors.response.use(
 		if (status === 401) {
 			//
 		} else {
-			message.error(error);
+			// message.error(error);
 			return Promise.reject(error);
 		}
 	}
