@@ -1,10 +1,10 @@
 <!--
  * @Author: along
- * @Description: 
+ * @Description:
  * @Date: 2023-08-30 13:22:11
  * @LastEditors: along
- * @LastEditTime: 2023-08-30 13:29:52
- * @FilePath: /vue3/src/App.vue
+ * @LastEditTime: 2023-08-31 11:30:59
+ * @FilePath: /cxy-v3-template/src/App.vue
 -->
 <script setup lang="ts">
 import {RouterView} from 'vue-router';
@@ -16,4 +16,6 @@ import {RouterView} from 'vue-router';
 	</keep-alive>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@import '~/assets/css/global.scss';
+</style>
