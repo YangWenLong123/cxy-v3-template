@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-08-30 13:22:11
  * @LastEditors: along
- * @LastEditTime: 2023-08-31 09:02:28
+ * @LastEditTime: 2023-08-31 10:19:14
  * @FilePath: /cxy-v3-template/vite.config.ts
  */
 import path from 'node:path';
@@ -87,8 +87,5 @@ export default defineConfig(({mode}) => {
 		define: {
 			__APP_ENV__: JSON.stringify(config.VITE_APP_API_BASE_URL),
 		},
-		// define: {
-		// 	BASE_URL: config.VITE_APP_API_BASE_URL,
-		// },
 	};
 });
