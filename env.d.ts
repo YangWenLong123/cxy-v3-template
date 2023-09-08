@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-08-30 14:50:34
  * @LastEditors: along
- * @LastEditTime: 2023-08-31 09:17:35
+ * @LastEditTime: 2023-09-08 13:45:00
  * @FilePath: /cxy-v3-template/env.d.ts
  */
 /// <reference types="vite/client" />
@@ -26,3 +26,6 @@ declare global {
 	const ElMessage: typeof import('element-plus')['ElMessage'];
 	const ElLoading: typeof import('element-plus')['ElLoading'];
 }
+
+declare module 'element-plus/dist/locale/zh-cn.mjs';
+declare module 'element-plus/dist/locale/en.mjs';
