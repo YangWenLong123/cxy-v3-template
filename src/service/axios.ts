@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-08-30 17:51:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-31 09:03:54
+ * @LastEditTime: 2023-09-08 11:19:14
  * @FilePath: /cxy-v3-template/src/service/axios.ts
  */
 import axios, {AxiosResponse, AxiosRequestConfig} from 'axios';
@@ -37,14 +37,7 @@ service.interceptors.response.use(
 		return Promise.reject(data);
 	},
 	(error: any) => {
-		const {status} = error?.response;
-
-		if (status === 401) {
-			//
-		} else {
-			// message.error(error);
-			return Promise.reject(error);
-		}
+		return Promise.reject(error);
 	}
 );
 
