@@ -1,6 +1,6 @@
-# EDC CMS
+# 后台管理系统模版
 
-DC管理后台-版本更新内容管理功能，用于发布版本更新通知
+项目模块，快速接入项目
 
 ## 项目源
 
@@ -185,4 +185,29 @@ module.exports = {
 		'header-max-length': [0, 'always', 72],
 	},
 };
+```
+
+### 国际化
+
+```js
+<template>
+	<span>{{ $t('common.home') }}</span>
+	<el-button type="primary" @click="onChangeLanguage('en')">切换英文</el-button>
+	<el-button type="primary" @click="onChangeLanguage('zh')">切换中文</el-button>
+</template>
+
+<script lang="ts" setup>
+import {useAppStore} from '~/stores';
+const {app} = useAppStore();
+import {useI18n} from 'vue-i18n';
+
+const i18 = useI18n();
+
+const onChangeLanguage = (language: string) => {
+	i18.locale.value = language;
+
+	app.language = language;
+	ElMessage.success('更新完成');
+};
+</script>
 ```

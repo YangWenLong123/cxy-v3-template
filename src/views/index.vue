@@ -3,12 +3,11 @@
  * @Description: 页面入口
  * @Date: 2023-08-30 13:30:26
  * @LastEditors: along
- * @LastEditTime: 2023-09-08 13:37:05
+ * @LastEditTime: 2023-09-08 14:01:51
  * @FilePath: /cxy-v3-template/src/views/index.vue
 -->
 <template>
 	<span>{{ $t('common.home') }}</span>
-
 	<el-button type="primary" @click="onChangeLanguage('en')">切换英文</el-button>
 	<el-button type="primary" @click="onChangeLanguage('zh')">切换中文</el-button>
 </template>
