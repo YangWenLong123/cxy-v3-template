@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-09-08 11:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-09-08 13:52:40
+ * @LastEditTime: 2024-03-20 14:34:12
  * @FilePath: /cxy-v3-template/src/locales/index.ts
  */
 import {createI18n} from 'vue-i18n';
@@ -13,7 +13,9 @@ import en from './en.json';
 // 获取浏览器界面语言，默认语言
 // https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator/language
 
-const pinia = JSON.parse(localStorage['pinia-app']) ?? 'zh';
+const pinia = localStorage['pinia-app']
+	? JSON.parse(localStorage['pinia-app'])
+	: 'zh';
 
 export default createI18n({
 	locale: pinia?.app?.language ?? 'zh',
