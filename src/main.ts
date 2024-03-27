@@ -1,9 +1,9 @@
 /*
  * @Author: along
- * @Description:
+ * @Description: 入口
  * @Date: 2023-08-30 13:22:11
  * @LastEditors: along
- * @LastEditTime: 2023-09-08 11:48:56
+ * @LastEditTime: 2024-03-22 10:30:44
  * @FilePath: /cxy-v3-template/src/main.ts
  */
 import {createApp} from 'vue';
@@ -11,6 +11,8 @@ import {createPinia} from 'pinia';
 import {createPersistedState} from 'pinia-persistedstate-plugin';
 import App from './App.vue';
 import router from './router';
+import * as ElementPlusIconsVue from '@element-plus/icons-vue';
+import '~/assets/font/index.css';
 
 const app = createApp(App);
 const store = createPinia();
@@ -25,6 +27,10 @@ app.use(i18n);
 // 注册指令
 import directive from './directive';
 directive(app);
+
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+	app.component(key, component);
+}
 
 // 应用级的错误处理器，用来捕获所有子组件上的错误：
 app.config.errorHandler = (err, instance, info) => {

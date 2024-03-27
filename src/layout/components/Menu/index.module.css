@@ -3,3 +3,8 @@
 	height: 100vh;
 	background-color: rgb(48, 65, 86);
 }
+
+.ml {
+	margin-left: 20px;
+	font-size: 13px;
+}

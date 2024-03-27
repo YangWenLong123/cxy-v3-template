@@ -3,7 +3,7 @@
  * @Description: 布局
  * @Date: 2024-03-20 15:01:47
  * @LastEditors: along
- * @LastEditTime: 2024-03-20 15:16:56
+ * @LastEditTime: 2024-03-22 10:13:30
  * @FilePath: /cxy-v3-template/src/layout/index.vue
 -->
 
@@ -22,7 +22,9 @@ onMounted(() => {});
 		<MenuPage />
 		<div :class="[css.layout]">
 			<HeadPage />
-			<MainPage />
+			<MainPage>
+				<RouterView></RouterView>
+			</MainPage>
 		</div>
 	</div>
 </template>
