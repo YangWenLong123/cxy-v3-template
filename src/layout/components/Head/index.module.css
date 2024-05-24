@@ -1,4 +1,48 @@
 .box {
-	height: 84px;
-	min-height: 84px;
+	height: 64px;
+	min-height: 64px;
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	cursor: pointer;
+	font-size: 24px;
+	margin-left: 20px;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 24px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.size18 {
+	font-size: 18px;
+}
+
+.size22 {
+	font-size: 22px;
+}
+
+.notice {
+	margin: 0 18px;
+}
+
+.avatar {
+	width: 38px;
+	border-radius: 50%;
+}
+
+.title {
+	margin-left: 12px;
+	font-size: 16px;
 }

@@ -6,3 +6,10 @@
 	overflow-y: auto;
 	background-color: #f0f2f5;
 }
+
+.boxMain {
+	flex: 1;
+	margin: 12px;
+	background-color: #fff;
+	overflow: hidden;
+}

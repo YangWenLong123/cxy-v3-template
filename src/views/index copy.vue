@@ -3,8 +3,8 @@
  * @Description: 页面入口
  * @Date: 2023-08-30 13:30:26
  * @LastEditors: along
- * @LastEditTime: 2023-09-08 14:01:51
- * @FilePath: /cxy-v3-template/src/views/index.vue
+ * @LastEditTime: 2024-05-08 09:53:31
+ * @FilePath: /cxy-v3-template/src/views/index copy.vue
 -->
 <template>
 	<span>{{ $t('common.home') }}</span>
@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import {useAppStore} from '~/stores';
+import {useAppStore} from '@/stores';
 const {app} = useAppStore();
 import {useI18n} from 'vue-i18n';
 import api from '~/api';

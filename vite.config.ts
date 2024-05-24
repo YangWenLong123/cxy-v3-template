@@ -1,9 +1,9 @@
 /*
  * @Author: along
- * @Description:
+ * @Description: viteConfig
  * @Date: 2023-08-30 13:22:11
  * @LastEditors: along
- * @LastEditTime: 2023-08-31 10:19:14
+ * @LastEditTime: 2024-05-08 15:48:19
  * @FilePath: /cxy-v3-template/vite.config.ts
  */
 import path from 'node:path';
@@ -82,6 +82,7 @@ export default defineConfig(({mode}) => {
 		resolve: {
 			alias: {
 				'~': path.resolve(__dirname, './src'),
+				'@': path.resolve(__dirname, './src'),
 			},
 		},
 		define: {

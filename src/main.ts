@@ -3,7 +3,7 @@
  * @Description: 入口
  * @Date: 2023-08-30 13:22:11
  * @LastEditors: along
- * @LastEditTime: 2024-03-22 10:30:44
+ * @LastEditTime: 2024-05-21 10:02:16
  * @FilePath: /cxy-v3-template/src/main.ts
  */
 import {createApp} from 'vue';
@@ -12,7 +12,8 @@ import {createPersistedState} from 'pinia-persistedstate-plugin';
 import App from './App.vue';
 import router from './router';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
-import '~/assets/font/index.css';
+import '@/assets/font/index.css';
+import '@/utils/permission';
 
 const app = createApp(App);
 const store = createPinia();
@@ -40,5 +41,3 @@ app.config.errorHandler = (err, instance, info) => {
 };
 
 app.mount('#app');
-
-import '~/utils/permission';
